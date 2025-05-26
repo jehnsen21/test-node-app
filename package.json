@@ -1,7 +1,6 @@
 {
   "name": "node-ts-vercel-app",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only api/index.ts",
     "build": "tsc",
