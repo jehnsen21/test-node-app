@@ -7,8 +7,5 @@ app.get('/test', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Hello from Vercel API!' });
 });
 
-app.get('/orders', (req: Request, res: Response) => {
-  res.status(200).json({ message: 'Hello from Vercel API!' });
-});
 
 export default app;
