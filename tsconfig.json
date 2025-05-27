@@ -7,8 +7,6 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "api",
-    "rootDir": "src"
   },
-  "include": ["src/**/*", "api/index.ts"]
+  "include": ["src/**/*", "api/**/*"],
 }
