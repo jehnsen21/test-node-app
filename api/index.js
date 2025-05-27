@@ -9,8 +9,5 @@ app.use(express_1.default.json()); // Express 5 built-in JSON parser
 app.get('/test', (req, res) => {
     res.status(200).json({ message: 'Hello from Vercel API!' });
 });
-app.get('/orders', (req, res) => {
-    res.status(200).json({ message: 'Hello from Vercel API!' });
-});
 exports.default = app;
 //# sourceMappingURL=index.js.map
