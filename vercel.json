@@ -21,10 +21,5 @@
         "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
       }
     }
-  ],
-  "env": {
-    "AZURE_SERVICE_BUS_CONNECTION_STRING": "@azure_service_bus_connection_string",
-    "AZURE_COSMOS_DB_ENDPOINT": "@azure_cosmos_db_endpoint",
-    "AZURE_COSMOS_DB_KEY": "@azure_cosmos_db_key"
-  }
+  ]
 }
