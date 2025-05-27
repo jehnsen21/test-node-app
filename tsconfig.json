@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6",
     "module": "commonjs",
     "esModuleInterop": true,
-    // "outDir": "./dist",
-    // "rootDir": "./api",
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "target": "es6", // Compatible with Vercel's Node.js runtime
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "api",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"]
 }
