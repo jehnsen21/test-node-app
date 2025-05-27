@@ -2,9 +2,9 @@
   "name": "node-ts-vercel-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only api/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "start": "node api/index.js"
+    "start": "node src/index.js"
   },
   "dependencies": {
     "@azure/service-bus": "^7.9.5",
