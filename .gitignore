@@ -1,6 +1,6 @@
 node_modules
 dist
-# api
+api
 .env
 
 /azure-functions/node_modules/
