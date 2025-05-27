@@ -1,15 +1,10 @@
-import express, { Request, Response } from 'express';
+// api/index.ts
+import { VercelRequest, VercelResponse } from '@vercel/node';
+import app from '../src/app';
+import { createServer } from 'http';
+import { parse } from 'url';
 
-import ordersRouter from './orders';
-
-const app = express();
-app.use(express.json());
-
-app.get('/test', (req: Request, res: Response) => {
-  res.status(200).json({ message: 'Hello from Vercel API!' });
-});
-
-app.use('/orders', ordersRouter);
-
-
-export default app;
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const server = createServer(app);
+  server.emit('request', req, res);
+}
