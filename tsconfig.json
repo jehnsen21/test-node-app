@@ -8,5 +8,5 @@
     "moduleResolution": "node",
     "sourceMap": true,
   },
-  "include": ["src/**/*", "api/**/*"],
+  "include": ["api/**/*"],
 }
