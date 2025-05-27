@@ -1,9 +1,9 @@
 import { Request, Response, Router } from "express";
 
-const router = Router();
+const ordersRouter = Router();
 
-router.get('/orders', (req: Request, res: Response) => {
+ordersRouter.get('/', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Orders from Vercel received!' });
 });
 
-export default router;
+export default ordersRouter;
