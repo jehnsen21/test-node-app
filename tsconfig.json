@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
+    "target": "ES6",
     "module": "commonjs",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2020",
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    // "outDir": "api",
-    // "rootDir": "src",
-  },
-  "include": ["src/**/*", "api/**/*"],
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }

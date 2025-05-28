@@ -3,6 +3,7 @@ import ordersRouter from '../src/orders';
 
 const app = express();
 app.use(express.json());
+const port = process.env.PORT;
 
 app.get('/test', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Hello from Vercel API!' });
@@ -14,4 +15,6 @@ app.get('/users', (req: Request, res: Response) => {
 
 app.use('/orders', ordersRouter);
 
-export default app;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
