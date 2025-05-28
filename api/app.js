@@ -11,6 +11,9 @@ app.use(express_1.default.json());
 app.get('/test', (req, res) => {
     res.status(200).json({ message: 'Hello from Vercel API!' });
 });
+app.get('/users', (req, res) => {
+    res.status(200).json({ users: 'Tony Stark, Steve Rogers, Peter Parker' });
+});
 app.use('/orders', orders_1.default);
 exports.default = app;
 //# sourceMappingURL=app.js.map

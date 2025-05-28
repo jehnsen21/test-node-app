@@ -9,6 +9,10 @@ app.get('/test', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Hello from Vercel API!' });
 });
 
+app.get('/users', (req: Request, res: Response) => {
+  res.status(200).json({ users: 'Tony Stark, Steve Rogers, Peter Parker' });
+});
+
 app.use('/orders', ordersRouter);
 
 export default app;
