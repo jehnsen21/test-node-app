@@ -1,20 +1,7 @@
-import express, { Request, Response } from 'express';
-import 'dotenv/config';
-import orderRouter from '../src/routes';
+import app from "../src/app";
 
-const app = express();
-const port = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-
-app.get('/api/test', (req: Request, res: Response) => {
-  res.json({ message: 'Hello from Express + TypeScript!! Runnign on PORT ' + port });
-});
-
-// app.use('/order', orderRouter);
-
-app.use('/order', orderRouter)
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });

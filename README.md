@@ -12,6 +12,11 @@
 
 This project aims to build a top notch artificail intelligence that can learn on its own, build robots and weapons.
 
+Packages used:
+- @azure/cosmos
+- @azure/functions
+- @azure/service-bus
+
 
 PORT=
 SERVICEBUS_CONNECTIONSTRING

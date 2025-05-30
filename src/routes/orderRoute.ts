@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express'
-import { sendOrderMessage } from './serviceBus'
+import { sendOrderMessage } from '../serviceBus'
 
 const orderRouter = express.Router()
 
